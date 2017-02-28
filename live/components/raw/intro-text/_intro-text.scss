@@ -1,9 +1,0 @@
-/*paragraphs*/
-p.intro {
-  @include rem-fallback(font-size, $base-font-size*1.15);
-  
-  background-color: $whitesmoke;
-  color: $brand-primary;
-  margin-bottom: 25px;
-  padding: 15px;
-}

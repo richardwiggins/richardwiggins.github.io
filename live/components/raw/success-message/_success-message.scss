@@ -1,6 +1,0 @@
-.site-message--success {
-	@extend %site-message;
-
-	background-color: lighten($success,50%);
-	border-color: $success;
-}

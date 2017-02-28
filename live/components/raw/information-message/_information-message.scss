@@ -1,6 +1,0 @@
-.site-message--info {
-	@extend %site-message;
-
-	background-color: lighten($highlight,45%);
-	border-color: $highlight;
-}

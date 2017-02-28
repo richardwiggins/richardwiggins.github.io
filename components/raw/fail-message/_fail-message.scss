@@ -1,6 +1,0 @@
-.site-message--fail {
-	@extend %site-message;
-
-	background-color: lighten($fail,40%);
-	border-color: $fail;
-}
