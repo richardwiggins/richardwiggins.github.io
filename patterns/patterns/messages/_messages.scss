@@ -1,0 +1,7 @@
+%site-message{
+	background: $ghost-gray;
+	border-color: darken($ghost-gray,20%);
+	border-width: 1px;
+	border-style: solid;
+	@include rem-fallback(padding, $base-spacing-unit/2);
+}

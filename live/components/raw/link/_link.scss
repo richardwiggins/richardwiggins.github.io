@@ -1,0 +1,16 @@
+a {
+	color: $link;
+	text-decoration: none;
+	&:hover {
+		color: $link-alt;
+		text-decoration: underline;
+
+	}
+	&:visited {
+		color: $link-alt;
+	}
+	&:focus {
+		background-color: $highlight;
+		outline: 3px solid $highlight;
+	}
+}

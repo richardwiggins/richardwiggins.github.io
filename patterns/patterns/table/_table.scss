@@ -1,0 +1,49 @@
+table {
+  width:100%;
+  border: none;
+
+  thead, tfoot, thead tr {
+    background-color:$geyser;
+  }
+  tr.even, tr.alt, tr:nth-child(even) {
+    background-color: $ghost-gray;
+  }
+  th, td {
+  	text-align: left;
+  	padding: 0.5em;
+
+  	&.align-right {
+  		text-align: right;
+  	}
+    &.number {
+      text-align: right;
+    }
+  }
+}
+
+// Added from Bootstrap
+.table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    // Tighten up spacing
+    > .table {
+      // Ensure the content doesn't wrap
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th,
+          > td {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}

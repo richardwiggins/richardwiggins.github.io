@@ -1,0 +1,30 @@
+.breadcrumbs {
+  @include rem-fallback(padding-top, $base-font-size / 2);
+  ul {
+    @extend %clearfix;
+    @extend %small;
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+  }
+  .inline-list li {
+    margin-left:0;
+    float:left;
+    font-weight: bold;
+    a {
+      border: 0;
+      font-weight: bold;
+    }
+  }
+  .inline-list > li > * {
+    display:inline-block;
+  }
+  li::after {
+    content:">";
+    @include rem-fallback(margin-left, $base-font-size/3);
+    @include rem-fallback(margin-right, $base-font-size/3);
+  }
+  li:last-child::after{
+    content:"";
+  }
+}

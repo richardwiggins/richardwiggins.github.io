@@ -1,0 +1,99 @@
+/**
+ * Color Swatches
+ */
+.sg-colors {
+	@include clearfix();
+	margin: 0;
+	list-style-type: none;
+}
+
+.sg-color {
+	float: left;
+	width: 14.285%;
+	
+	@media all and (max-width: 1000px) {
+		width: 25%;
+		width: 16.666667%;
+	}
+
+	@media all and (max-width: 760px) {
+		width: 25%;
+	}
+
+	@media all and (max-width: 600px) {
+		width: 50%;	
+	}
+}
+
+.sg-swatch {
+	height: 5em;
+	width: 5em;
+	margin: 0 auto 1em;
+	@include prefix(border-radius, 100%);
+}
+
+.sg-label {
+	text-align: center;
+	padding: .5em 0;
+}
+
+.sg-hex {
+	display: block;
+}
+
+.color-brand-primary {
+	background-color: $brand-primary;
+}
+.color-brand-primary-lt {
+	background-color: $brand-primary-lt;
+}
+/*
+.color-brand-primary-dk {
+	background-color: $brand-primary-dk;
+}
+*/
+.color-brand-secondary {
+	background-color: $brand-secondary;
+}
+.color-brand-secondary-lt {
+	background-color: $brand-secondary-lt;
+}
+.color-brand-theme {
+	background-color: $highlight;
+}
+.color-highlight {
+	background-color: $highlight;
+}
+.color-fail {
+	background-color: $fail;
+}
+.color-success {
+	background-color: $success;
+}
+.color-black {
+	background-color: $black;
+}
+.color-white {
+	background-color: $white;
+}
+.color-light-grey {
+	background-color: $light-grey;
+}
+.color-mid-grey {
+	background-color: $mid-grey;
+}
+.color-dark-grey {
+	background-color: $dark-grey;
+}
+.color-ghost-gray {
+	background-color: $ghost-gray;
+}
+.color-whitesmoke {
+	background-color: $whitesmoke;
+}
+.color-white-grey {
+	background-color: $white-grey;
+}
+.color-blue {
+	background-color: $blue;
+}

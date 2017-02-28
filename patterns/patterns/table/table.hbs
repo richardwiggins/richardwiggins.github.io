@@ -1,0 +1,22 @@
+<div class="table-responsive">
+<table class="table table-info" role="grid" summary="A description of the table should go here for screenreaders.">
+	<thead>
+		<tr>
+			<th width="200">{{header-text}}</th>
+			<th>{{header-text}}</th>
+			<th width="150">{{header-text}}</th>
+			<th width="150" class="number">{{header-text}}</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each numbers}}
+		<tr>
+			<td>{{../short-text}}</td>
+			<td>{{../long-text}}</td>
+			<td>{{../short-text}}</td>
+			<td class="number">{{this}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+</table>
+</div>

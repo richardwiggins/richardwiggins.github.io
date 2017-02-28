@@ -1,0 +1,16 @@
+collated: true
+context:
+  button-text: Button	
+  modifier: button
+variants:
+- name: button secondary
+  context:
+    button-text: Button Secondary
+    modifier: button--secondary
+- name: button themed
+  context:
+    button-text: Button Themed
+    modifier: button--alt
+- name: disabled button
+  context:
+    button-text: Disabled Button

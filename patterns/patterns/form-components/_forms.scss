@@ -1,0 +1,84 @@
+label, legend {
+  display: block;
+  @include rem-fallback(margin-bottom, $base-spacing-unit/4);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea,
+select {
+  border-width: 2px;
+  border-style: solid;
+  border-color: $geyser;
+  font-size: 16px; // magic number for iOS to not do stupid things to forms
+  line-height: 1;
+  @include rem-fallback(padding,$base-spacing-unit/4);
+  margin: 0;
+  width: auto;
+
+  &.is-valid {
+    border-color: $success;
+  }
+  
+  &.is-error {
+    border-color: $fail;
+  }
+
+  &:focus {
+    outline-color: $blue;
+    outline-style: solid;
+    outline-width: 3px;
+  }
+
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+
+input[type="text"].filter{
+  border-color:$geyser;
+  margin-bottom: $base-spacing-unit;
+}
+
+
+.search--home {
+
+  @include rem-fallback(padding, $base-spacing-unit, $base-spacing-unit/2);
+  background-color: $brand-primary;
+  color: $white;
+
+  h3 {
+    font-weight: normal;
+    margin-top: 0;
+    @include rem-fallback(margin-bottom, $base-spacing-unit/4);
+  }
+
+  input[type="submit"] {
+    @extend .button--secondary;
+  }
+
+  .hint {
+    font-size: 80%;
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+}

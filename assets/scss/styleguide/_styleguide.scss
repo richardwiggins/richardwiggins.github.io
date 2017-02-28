@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #STYLEGUIDE
+    Styles only used within the styleguide
+\*------------------------------------*/
+
+/**
+ * Grid pattern
+ */
+.example {
+	.g-column {
+	background-image: url(../images/grid.png);
+	min-height: 30px;
+	}
+}

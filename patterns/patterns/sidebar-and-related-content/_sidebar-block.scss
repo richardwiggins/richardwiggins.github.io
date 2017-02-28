@@ -1,0 +1,35 @@
+.block{
+
+	@include rem-fallback(margin-bottom, $base-font-size);
+
+	ol,ul {
+		margin-bottom: 0;
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+  li {
+    @include rem-fallback(margin-bottom, $base-font-size/2);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.active {
+    	a {
+    		color: $brand-primary;
+    	}
+    	&:before {
+    		content: '»';
+    		color: $brand-primary;
+    		margin-right: .5em;
+
+    	}
+    }
+  }
+}
+
+.block__title {
+	margin-top: 0;
+	border-bottom: 1px solid $brand-primary;
+}

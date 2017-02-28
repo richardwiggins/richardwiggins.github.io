@@ -1,0 +1,6 @@
+/*paragraphs*/
+p {
+  @include rem-fallback(font-size, $base-font-size);
+  @include rem-fallback(margin-bottom,$base-font-size);
+  line-height: $base-line-height-ratio;
+}

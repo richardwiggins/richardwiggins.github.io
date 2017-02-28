@@ -1,0 +1,19 @@
+.site-wide-alert {
+  @extend %small;
+  background-color:$brand-primary;
+  color: $white;
+  vertical-align:middle !important;
+  @include rem-fallback(padding, $base-font-size);
+  @include rem-fallback(margin-bottom, $base-font-size);
+
+  h2 {
+    color: $white;
+    margin:0;
+    padding:0;
+    @include rem-fallback(font-size, $h3-font-size);
+  }
+}
+
+.site-wide-alert__header {
+  @include rem-fallback(margin-bottom, $base-font-size);
+}

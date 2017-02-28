@@ -1,0 +1,14 @@
+blockquote {
+  @include rem-fallback(padding-left,$base-font-size);
+
+  border-left-color: $brand-primary;
+  border-left-style: solid;
+  border-left-width: 3px;
+  color: $mid-grey;
+  
+  p {
+    @include rem-fallback(margin-bottom, $base-font-size);
+    
+    font-size: 115%;
+  }
+}

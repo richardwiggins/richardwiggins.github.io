@@ -1,0 +1,58 @@
+.site-header {
+	@extend %clearfix;
+
+	background: $brand-primary;
+
+	@include rem-fallback(padding-bottom, $base-spacing-unit);
+	@include rem-fallback(padding-top, $base-spacing-unit);
+
+	padding-left: 0;
+	padding-right: 0;
+
+	@media all and (max-width:760px){
+		@include rem-fallback(padding-bottom, $base-spacing-unit/2);
+		@include rem-fallback(padding-top, $base-spacing-unit/2);
+	}
+
+	@media all and (max-width: $max-page-width){
+		@include rem-fallback(padding-left, $grid-gutter);
+		@include rem-fallback(padding-right, $grid-gutter);
+	}
+
+}
+
+.site-logo {
+	float: left;
+	width: 16.6666667%;
+	margin-right: 16.6666667% + 33.333333% + $grid-gutter-half;
+
+	@media all and (max-width:$max-page-width){
+		width: 22%;
+		margin-right: 11.3333333% + $grid-gutter-half + 33.333333%;
+	}
+
+	@media all and (max-width:760px){
+		width: 25%;
+		margin-right: 8.3333333% + $grid-gutter-half;
+	}
+
+	@media all and (max-width:600px){
+		margin-bottom: 1em;
+		margin-right: 0;
+		width: 100%;
+	}
+
+}
+
+.site-search {
+	float: left;
+	width: 33.3333333% - $grid-gutter-half;
+
+	@media all and (max-width:760px){
+		width: 66.6666667% - $grid-gutter-half;
+	}
+
+	@media all and (max-width: 600px){
+		width: 100%;
+	}
+}

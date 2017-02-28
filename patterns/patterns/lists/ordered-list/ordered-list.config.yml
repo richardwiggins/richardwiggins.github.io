@@ -1,0 +1,4 @@
+context:
+  long-text: List item with a much longer description or more content.
+  short-text: List item.
+  link-text: This is a link.

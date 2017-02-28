@@ -1,0 +1,37 @@
+.promobox {
+    text-align: center;
+    -moz-box-shadow: 0 10px 15px $whitesmoke;
+    -webkit-box-shadow: 0 10px 15px $whitesmoke;
+    box-shadow: 0 10px 15px $whitesmoke;
+    margin-bottom: 15px;
+}
+
+.promobox img {
+    display: block;
+    padding: 0 0 15px;
+}
+
+.promobox h3 {
+	margin-top: 0;
+    padding: 0 5px 15px;
+    color: $white;
+}
+
+.promobox a,
+.promobox a:active,
+.promobox a:focus {
+    background-color: $brand-primary;
+    display: block;
+    text-decoration: none;
+}
+
+.promobox a:hover {
+    background-color: #8c1391;
+    text-decoration: none;
+}
+
+.promobox p,
+.promobox div {
+    padding: 0 5px 15px;
+    color: $white;
+}

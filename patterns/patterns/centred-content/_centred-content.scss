@@ -1,0 +1,32 @@
+.centred-content {
+    margin-left: 20.833333333%;
+    width: 54.16666666%;
+    padding: 0 5px;
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.centred-content .ms-rtestate-field>*:nth-child(1) {
+    padding-top: 15px;
+}
+
+@media(max-width:640px) {
+    .centred-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.centred-content .ncc-main-content-area-text p+span,
+.centred-content .ncc-main-content-area-text h2+span,
+.centred-content .ncc-main-content-area-text h3+span,
+.centred-content .ncc-main-content-area-text ul+span,
+.centred-content .ncc-main-content-area-text div+span {
+    display: block;
+    line-height: 0;
+}
+
+.centred-content li {
+    list-style-position: inside;
+}
