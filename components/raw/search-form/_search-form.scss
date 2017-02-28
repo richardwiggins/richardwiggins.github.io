@@ -1,0 +1,19 @@
+.search {
+  width: 100%;
+  position: relative;
+
+  input[type="submit"] {
+    @extend .button;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    @include rem-fallback(width, $base-spacing-unit*1.5);
+
+    background-image: url(../images/icon-search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-indent: -9999px;
+  }
+}
